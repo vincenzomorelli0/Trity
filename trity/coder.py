@@ -22,8 +22,8 @@ T  = '\033[93m' # tan
 def encode():
     Str = raw_input(''+T+'' + color.UNDERLINE + 'String to encode>' + color.END)
     Str = Str.encode('base64','strict');
-    print ""+G+"Encoded: " + Str
+    print (""+G+"Encoded: " + Str)
 def decode():
     Str = raw_input(''+T+'' + color.UNDERLINE + 'String to decode>' + color.END)
     Str = Str.decode('base64','strict');
-    print ""+G+"Decoded String: " + Str
+    print (""+G+"Decoded String: " + Str)
