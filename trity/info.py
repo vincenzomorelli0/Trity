@@ -20,18 +20,18 @@ ipaddr = urlopen('http://ip.42.pl/raw').read()
 def_gw_device = netifaces.gateways()['default'][netifaces.AF_INET][1]
 
 def info():
-    print ""+W+"+--------------------------+"
-    print "|"+C+" Mac Address: " + mac_address + ""+W+"+--------------------------+"
-    print "|"+R+" Local address: " + localaddr
-    print ""+W+"+--------------------------+"
-    print "|"+G+" IP: " + ipaddr
-    print ""+W+"+--------------------------+"
-    print "|"+T+" Operating System: " + platform.system()
-    print ""+W+"+--------------------------+"
-    print "|"+P+" Name: " + platform.node()
-    print ""+W+"+--------------------------+"
-    print "|"+O+" Interface: " + def_gw_device
-    print ""+W+"+--------------------------+"
+    print (""+W+"+--------------------------+")
+    print ("|"+C+" Mac Address: " + mac_address + ""+W+"+--------------------------+")
+    print ("|"+R+" Local address: " + localaddr)
+    print (""+W+"+--------------------------+")
+    print ("|"+G+" IP: " + ipaddr)
+    print (""+W+"+--------------------------+")
+    print ("|"+T+" Operating System: " + platform.system())
+    print (""+W+"+--------------------------+")
+    print ("|"+P+" Name: " + platform.node())
+    print (""+W+"+--------------------------+")
+    print ("|"+O+" Interface: " + def_gw_device)
+    print (""+W+"+--------------------------+")
     FILE = open("CompNetInfo.txt","w")
     FILE.write("Mac Address: " + mac_address + "Local address: " + localaddr + "\nIP: " + ipaddr + "\nOperating System: " + platform.system() + "\nName: " + platform.node() + "\nInterface: " + def_gw_device)
     FILE.close()
