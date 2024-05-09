@@ -16,7 +16,7 @@ header = """
                  ||     ||
 """
 
-print header
+print (header)
 print "\033[1;36mOperating Systems Available:\033[1;36m "
 print "\n--------------------------"
 print "(1) Kali Linux / Ubuntu "
