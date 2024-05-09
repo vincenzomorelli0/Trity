@@ -1,3 +1,4 @@
+import netifaces
 import os
 import platform
 import socket
@@ -11,7 +12,7 @@ B = '\033[34m'  # blue
 P = '\033[35m'  # purple
 C = '\033[36m'  # cyan
 GR = '\033[37m'  # gray
-T = '\033[93m'  # tan 
+T = '\033[93m'  # tan
 
 mac_address = os.popen("cat /sys/class/net/eth0/address").read()
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
