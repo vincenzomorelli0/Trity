@@ -24,7 +24,7 @@ print ("--------------------------\n")
 
 option = input("\033[0m[>] Select Operating System: \033[0m")
 
-if option == 1:
+if int(option) == 1:
     print ("\033[1;33m[*] Loading...\033[0m")
     os.system('apt-get install python-pip')
     import pip
