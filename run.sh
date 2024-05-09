@@ -1,3 +1,4 @@
 #!/bin/sh
 
-python trity.py
+cd /opt/trity
+python /opt/trity/trity.py
